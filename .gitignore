@@ -8,6 +8,10 @@
 *.so
 *.dylib
 
+# Golangd specific config
+.idea
+
+
 # Test binary, build with `go test -c`
 *.test
 
