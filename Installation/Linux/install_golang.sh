@@ -7,7 +7,7 @@ echo "   This script install Golang in a Linux amd64"
 echo "#################################################"
 
 # Change the version number according to your requirement
-GOLANG_VERSION=1.9.1
+GOLANG_VERSION=1.10
 
 cd $HOME
 
