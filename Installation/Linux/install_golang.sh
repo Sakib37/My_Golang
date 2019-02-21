@@ -7,7 +7,7 @@ echo "   This script install Golang in a Linux amd64"
 echo "#################################################"
 
 # Change the version number according to your requirement
-GOLANG_VERSION=1.10
+GOLANG_VERSION=1.11.5
 
 cd $HOME
 
@@ -29,5 +29,3 @@ echo  -e "\texport GOBIN=\$GOPATH/bin"
 
 echo "Also add the following paths to your \$PATH variable"
 echo  -e "\t\t\$GOROOT/bin:\$GOPATH/bin"
-
-
