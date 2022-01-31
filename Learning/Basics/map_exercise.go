@@ -7,12 +7,12 @@ import (
 
 func WordCount(s string) map[string]int {
 	wordmap := make(map[string]int)
-    for _, value := range strings.Fields(s){
-    	wordmap[value]++
+	for _, value := range strings.Fields(s) {
+		wordmap[value]++
 	}
 	return wordmap
 }
 
-func main() {
+func mapExercise() {
 	fmt.Println(WordCount(" This This is A String"))
 }

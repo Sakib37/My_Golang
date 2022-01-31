@@ -10,7 +10,7 @@ import "fmt"
 //
 //You can extend a slice's length by re-slicing it, provided it has sufficient capacity.
 
-func main() {
+func sliceFunc() {
 	s := []int{2, 3, 5, 7, 11, 13}
 	printSlice(s)
 
@@ -25,7 +25,6 @@ func main() {
 	// Drop its first two values.
 	s = s[2:]
 	printSlice(s)
-
 
 	//The zero value of a slice is nil.
 	//new_slice :=  []int{}

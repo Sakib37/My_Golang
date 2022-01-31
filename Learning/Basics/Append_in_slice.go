@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func appendSlice() {
 	var s []int
 	if s == nil {
 		fmt.Println("nil!")

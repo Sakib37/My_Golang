@@ -2,25 +2,26 @@ package main
 
 import "fmt"
 
-type Vertex struct {
+type VertexMAP struct {
 	Lat, Long float64
 }
+
 //The zero value of a map is nil. A nil map has no keys, nor can keys be added.
 //
 //The make function returns a map of the given type, initialized and ready for use.
-var m map[string]Vertex
+var m map[string]VertexMAP
 
-func main() {
-	m = make(map[string]Vertex)
-	//m := map[string]Vertex{}
+func mapFunc() {
+	m = make(map[string]VertexMAP)
+	//m := map[string]VertexMAP{}
 	fmt.Println(m)
-	m["Bell Labs"] = Vertex{
+	m["Bell Labs"] = VertexMAP{
 		40.68433, -74.39967,
 	}
 	fmt.Println(m["Bell Labs"])
 
 	//If the top-level type is just a type name, you can omit it from the elements of the literal.
-	var m2 = map[string]Vertex{
+	var m2 = map[string]VertexMAP{
 		"Bell Labs": {40.68433, -74.39967},
 		"Google":    {37.42202, -122.08408},
 	}

@@ -5,7 +5,6 @@ import (
 	"strings"
 )
 
-
 //Slices can be created with the built-in make function; this is how you create dynamically-sized arrays.
 //
 //The make function allocates a zeroed array and returns a slice that refers to that array:
@@ -19,7 +18,7 @@ import (
 //b = b[:cap(b)] // len(b)=5, cap(b)=5
 //b = b[1:]      // len(b)=4, cap(b)=4
 
-func main() {
+func forLoop() {
 	a := make([]int, 5)
 	printSlice_2("a", a)
 
@@ -31,8 +30,6 @@ func main() {
 
 	d := c[2:5]
 	printSlice_2("d", d)
-
-
 
 	// Slice of slice
 	board := [][]string{

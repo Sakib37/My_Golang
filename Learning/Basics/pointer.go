@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func pointerFunc() {
 	i, j := 42, 2701
 
 	p := &i         // point to i
@@ -14,4 +14,3 @@ func main() {
 	*p = *p / 37   // divide j through the pointer
 	fmt.Println(j) // see the new value of j
 }
-

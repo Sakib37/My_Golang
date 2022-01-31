@@ -5,7 +5,7 @@ import (
 	"runtime"
 )
 
-func main() {
+func switchFunc() {
 	fmt.Print("Go runs on ")
 	switch os := runtime.GOOS; os {
 	case "darwin":
@@ -18,6 +18,5 @@ func main() {
 		fmt.Printf("%s.", os)
 	}
 }
-
 
 //Switch with no condition can be a clean way to write long if-then-else chains.

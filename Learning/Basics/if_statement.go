@@ -15,7 +15,6 @@ func sqrt(x float64) string {
 	return fmt.Sprint(math.Sqrt(x))
 }
 
-
 func pow(x, n, lim float64) float64 {
 	//Like for, the if statement can start with a short statement to execute before the condition
 	// Here 'v < lim' is the condition for if statement
@@ -36,7 +35,7 @@ func Pow(x, n, lim float64) float64 {
 	return lim
 }
 
-func main() {
+func conditionFunc() {
 	fmt.Println(sqrt(2), sqrt(-4))
 
 	fmt.Println(

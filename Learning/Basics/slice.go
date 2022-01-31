@@ -2,9 +2,9 @@ package main
 
 import "fmt"
 
-func main() {
+func sliceExercise() {
 	primes := [6]int{2, 3, 5, 7, 11, 13}
-	primes_slice := [ ]int{2, 3, 5, 7, 11, 13}
+	primes_slice := []int{2, 3, 5, 7, 11, 13}
 
 	var s []int = primes[1:4]
 	fmt.Println(s)
@@ -34,7 +34,6 @@ func main() {
 
 	fmt.Println("\n\nSlice literals: \n")
 
-
 	q := []int{2, 3, 5, 7, 11, 13}
 	fmt.Println(q)
 
@@ -53,7 +52,6 @@ func main() {
 		{13, true},
 	}
 	fmt.Println(z)
-
 
 	// When slicing, you may omit the high or low bounds to use their defaults instead.
 	//The default is zero for the low bound and the length of the slice for the high bound.
